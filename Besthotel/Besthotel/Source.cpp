@@ -1,33 +1,30 @@
 //Author Phero Luong
 //Date 08/30/2018
+#include <iostream>
+#include <string>
+using namespace std;
 
-main()
-{
+	int main()
+	{
+	string userName;
 	double totalBill = 0.0;
 	double dayStayed = 0.0;
-	double roomCharge = 0.0;
-	double internetCharge = 0.0;
-	double tip = 0.0;
+	double roomCharge = 100.0;
+	double internetCharge = 10.0;
 
+	cout << "Enter your Name: ";
+	cin >> userName;
 
-	cout << "Enter the total bill: ";
-	cin >> totalBill;
-
-	cout << "Enter the internet charge: ";
+	cout << "How many days are you staying: ";
 	cin >> dayStayed;
 
-	cout << "Enter the room charge: ";
-	cin >> roomCharge;
 
-	dayStayed = totalBill - room;
-	tip = totalNoLiquor * tipPercent;
+	totalBill = (roomCharge + internetCharge) * dayStayed;
 
-	cout << "Tip: $ " << tip << endl;
+	cout << userName << " Your total bill is: $ " << totalBill << endl;
 
 	system("pause");
 	return 0;
-}
+	}
 
 
-
-}
